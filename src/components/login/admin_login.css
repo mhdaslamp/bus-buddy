@@ -1,0 +1,165 @@
+/* BusBuddyLogin.css */
+
+/* Main container */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #383643;
+  position: relative;
+}
+
+/* Background wave shapes */
+.bg-wave {
+  position: fixed;
+}
+
+.buslogo {
+  width: 250px;
+  height: 150px;
+}
+
+.bus-buddy-logo {
+  width: 250px;
+  height: 100px;
+  margin-top: 1cm;
+  margin-left: 1cm;
+}
+.sidevector {
+  width: 1000px;
+  height: 1000px;
+  margin-left: 15cm;
+}
+
+.top-right {
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-left-cirlcle {
+  width: 300px;
+  height: 400px;
+  margin-top: 450px;
+}
+
+/* Login content area */
+.login-content {
+  margin: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 32px;
+}
+
+/* Title section */
+.title-section {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+/* Bus image */
+.bus-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Login title */
+.login-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 32px;
+}
+
+/* Form styling */
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-label {
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #383643;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4b5db5;
+  box-shadow: 0 0 0 2px rgba(75, 93, 181, 0.3);
+}
+
+/* Sign in button */
+.sign-in-button {
+  width: 105%;
+  background-color: white;
+  color: #333;
+
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.sign-in-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-content {
+    padding: 0 16px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .input-label {
+    font-size: 18px;
+  }
+}
