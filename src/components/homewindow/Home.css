@@ -1,0 +1,68 @@
+body {
+  background-color: #d9d9d9;
+}
+
+.left-menu-div {
+  min-width: 310px;
+  background-color: #2d2942;
+  height: 100vh;
+  justify-items: flex-start;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  gap: 5cm;
+}
+
+.home-logo {
+  width: 220px;
+  height: 180px;
+}
+
+.logo-div {
+  padding-top: 20px;
+}
+
+.left-menu {
+  justify-items: center;
+}
+
+.menu-list {
+}
+
+.left-icon-home {
+  width: 36px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.left-icon-dashboard {
+  width: 36.563px;
+  height: 39px;
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  vertical-align: middle;
+}
+
+.left-icon-tickets {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 42px;
+}

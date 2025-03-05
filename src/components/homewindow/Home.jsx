@@ -1,8 +1,12 @@
 import React from 'react';
-import './home.css';
+import './Home.css';
+
+
 
 const Home = () => {
   return (
+    
+
   <div className='left-menu-div'>
     <div className='logo-div'>
         <img src="src\assets\images\home-logo.png" className='home-logo' alt="" />
@@ -15,6 +19,9 @@ const Home = () => {
       </ul>
     </div>
   </div>
+
+    
+  
   );
 };
 
