@@ -29,7 +29,7 @@ const Adminlogin = () => {
         {/* Login form */}
         <form className="login-form">
           <div className="form-group">
-            <label htmlFor="username" className="input-label">
+            <label  style={{color:'white'}}  htmlFor="username" className="input-label">
               User Name
             </label>
             <input
@@ -40,7 +40,7 @@ const Adminlogin = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="password" className="input-label">
+            <label style={{color:'white'}} htmlFor="password" className="input-label">
               Password
             </label>
             <input
