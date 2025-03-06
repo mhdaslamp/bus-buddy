@@ -1,10 +1,9 @@
 import React from 'react';
-import './home.css';
 import Header from '@/components/header/header';
-import DashboardTiles from '@/components/tiles/hometiles';
+import StudentRegistrationForm from '@/components/regform/regform';
 
 
-const Home = () => {
+const Registration = () => {
   return (
     <div style={{display:'grid',}} >
       <Header />
@@ -28,9 +27,10 @@ const Home = () => {
           </ul>
         </div>
       </div>
-     <DashboardTiles />
+      <StudentRegistrationForm />
+    
     </div>
   );
 };
 
-export default Home;
+export default Registration;
