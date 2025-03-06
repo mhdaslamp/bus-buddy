@@ -34,6 +34,7 @@ const StudentRegistrationForm = () => {
           <div className="form-group">
             <label htmlFor="admissionNo">Admission No</label>
             <input
+     
               type="text"
               id="admissionNo"
               name="admissionNo"
@@ -52,8 +53,10 @@ const StudentRegistrationForm = () => {
               value={formData.yearOfAdmission}
               onChange={handleChange}
               className="form-select"
+           
+    
             >
-              <option className='options' value="">Select Year OF Admission</option>
+              <option style={{color:'#9ca3af'}} value="">Select Year OF Admission</option>
               <option value="2025">2025</option>
               <option value="2024">2024</option>
               <option value="2023">2023</option>
@@ -64,6 +67,7 @@ const StudentRegistrationForm = () => {
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
+                
               type="text"
               id="name"
               name="name"
@@ -77,6 +81,7 @@ const StudentRegistrationForm = () => {
           <div className="form-group">
             <label htmlFor="mobileNo">Mobile No</label>
             <input
+            
               type="tel"
               id="mobileNo"
               name="mobileNo"
