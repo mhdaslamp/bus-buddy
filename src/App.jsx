@@ -1,19 +1,25 @@
+import React from 'react'; // ✅ Required import
+import './App.css';
+import Adminlogin from './components/login/admin_login';
+import Home from '@/components/homewindow/Home';
+import Header from './components/header/header';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import './App.css'
-import Adminlogin from './components/login/admin_login'
-import Home from './components/homewindow/Home'
-import Header from './components/header/Header'
 
 function App() {
 
-  return (
-    <div className='App' style={{ display: "grid", gap: "10px" }}>
-      <Header />
-      <Home />
-</div>
-   
 
-  )
+  const router = createBrowserRouter(
+    [
+      {
+        path: '/',element: <Adminlogin />
+      },
+      {
+        path: '/home',element: <Home />
+      }
+    ]); 
+  return  <RouterProvider router = {router} />
+
 }
 
-export default App
+export default App;
