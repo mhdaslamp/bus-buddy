@@ -1,36 +1,39 @@
 import React from 'react';
 import './home.css';
 import Header from '@/components/header/header';
+
+import { useState } from 'react';
 import DashboardTiles from '@/components/tiles/hometiles';
+import Sidebar from './sidebar';
+
 
 
 const Home = () => {
-  return (
-    <div style={{display:'grid',}} >
-      <Header />
   
+const  arr = useState(1);
+const value = arr[0];
+const setValue = arr[1];
 
-      <div className='left-menu-div'>
-        <div className='logo-div'>
-          <img src="src/assets/images/home-logo.png" className='home-logo' alt="Home Logo" />
-        </div>
-        <div className='left-menu'>
-          <ul className='menu-list'>
-            <li key="home">
-              <img className='left-icon-home' src="src/assets/images/home.png" alt="home" /> Home
-            </li>
-            <li key="dashboard">
-              <img className='left-icon-dashboard' src="src/assets/images/dashboard.png" alt="Dashboard" /> Dashboard
-            </li>
-            <li key="tickets">
-              <img className='left-icon-tickets' src="src/assets/images/ticket.png" alt="Ticket" /> Ticket Rates
-            </li>
-          </ul>
-        </div>
+  return (
+
+<>
+
+    <div style={{ display: 'grid', gridTemplateColumns: '0fr 3fr', height: '100vh' }}>
+      {/* Sidebar on the Left (Fixed) */}
+      <Sidebar />
+
+      {/* Right Section with Header Below Sidebar */}
+      <div style={{ display: 'grid', gridTemplateRows: 'auto 1fr', gap: '50px' }}>
+        {/* Header Below Sidebar */}
+        <Header />
+
+        {/* Main Content (Form) */}
+       <DashboardTiles />
       </div>
-     <DashboardTiles />
     </div>
-  );
-};
 
+</>
+  )}
+
+  
 export default Home;

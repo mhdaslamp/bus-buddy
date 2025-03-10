@@ -1,10 +1,8 @@
 .dashboard-container {
-  padding: 24px;
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-left: 270px;
-  margin-top: 200px;
+  z-index: 5;
 }
 
 .dashboard-tiles {

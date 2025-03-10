@@ -1,34 +1,22 @@
 import React from 'react';
 import Header from '@/components/header/header';
 import StudentRegistrationForm from '@/components/regform/regform';
-
+import Sidebar from '@/components/homewindow/sidebar';
 
 const Registration = () => {
   return (
-    <div style={{display:'grid',}} >
-      <Header />
-  
+    <div style={{ display: 'grid', gridTemplateColumns: '0fr 3fr', height: '100vh' }}>
+      {/* Sidebar on the Left (Fixed) */}
+      <Sidebar />
 
-      <div className='left-menu-div'>
-        <div className='logo-div'>
-          <img src="src/assets/images/home-logo.png" className='home-logo' alt="Home Logo" />
-        </div>
-        <div className='left-menu'>
-          <ul className='menu-list'>
-            <li key="home">
-              <img className='left-icon-home' src="src/assets/images/home.png" alt="home" /> Home
-            </li>
-            <li key="dashboard">
-              <img className='left-icon-dashboard' src="src/assets/images/dashboard.png" alt="Dashboard" /> Dashboard
-            </li>
-            <li key="tickets">
-              <img className='left-icon-tickets' src="src/assets/images/ticket.png" alt="Ticket" /> Ticket Rates
-            </li>
-          </ul>
-        </div>
+      {/* Right Section with Header Below Sidebar */}
+      <div style={{ display: 'grid', gridTemplateRows: 'auto 1fr', gap: '50px' }}>
+        {/* Header Below Sidebar */}
+        <Header />
+
+        {/* Main Content (Form) */}
+        <StudentRegistrationForm />
       </div>
-      <StudentRegistrationForm />
-    
     </div>
   );
 };
