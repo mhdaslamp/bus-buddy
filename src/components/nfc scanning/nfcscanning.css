@@ -1,0 +1,9 @@
+.mains {
+  min-width: 800px;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  border-radius: 27px;
+  height: 570px;
+  margin: 0 auto;
+}

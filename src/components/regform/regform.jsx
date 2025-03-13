@@ -131,7 +131,7 @@ const StudentRegistrationForm = () => {
         </div>
         
         <div className="button-container">
-          <button type="submit" className="submit-button">
+          <button className='submit-button' type='submit' onClick={() => setCurrentComponent('Tickets')}>
             Save and Continue
           </button>
         </div>

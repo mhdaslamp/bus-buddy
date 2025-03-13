@@ -32,7 +32,7 @@ const Sidebar = ({ setCurrentComponent }) => {
 
       <div className='home-cotenloader'>
         <div style={{ zIndex: '1', position: 'relative' }}>
-          {/* Additional content can go here */}
+         
         </div>
       </div>
     </>
