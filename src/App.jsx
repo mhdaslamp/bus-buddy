@@ -3,7 +3,6 @@ import './App.css';
 import Adminlogin from './components/login/admin_login';
 import Home from '@/components/homewindow/Home';
 import Registration from '@/components/regform/registrationwindow';
-import Header from './components/header/header';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
